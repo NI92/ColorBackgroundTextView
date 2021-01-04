@@ -20,16 +20,13 @@ class ViewController: UIViewController {
     private func setupTestColorBackgroundTextView1() {
         // View
         let textView = ColorBackgroundTextView()
-        textView.font = UIFont(name: "ObjectSans-Heavy", size: 21)
+        textView.font = UIFont.systemFont(ofSize: 21)
         textView.lineHeight = 23
-        textView.characterSpacing = -0.42
-        textView.numberOfLines = 0
         textView.textAlignment = .center
         textView.textColor = .white
         textView.color = UIColor(red: 0.349, green: 0.498, blue: 0.878, alpha: 1)
         textView.text = "Color background\ntext view"
         view.addSubview(textView)
-        textView1 = textView
         
         // Constraints
         textView.translatesAutoresizingMaskIntoConstraints = false
